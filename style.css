@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --font: "Open Sans", sans-serif;
+    --primary-color: #2fc02d;
+    --secondary-color: #24352d;
+    --black-color: #000000;
+    --white-color: #ffffff;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--font);
+}
+
+.container {
+    margin: 100px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.main {
+    display: flex;
+    flex-flow: column nowrap;
+    gap:3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-titulo h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.box-titulo span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.box-gerador {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    color: var(--white-color);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px var(--black-color);
+}
+
+.box-gerador input[type=text] {
+    padding: 10px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: #cdcdcd;
+}
+
+.box-gerador a {
+    padding: 10px 0;
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--white-color);
+}
+
+.box-gerador a:hover {
+    background-color: var(--primary-color);
+    transition: 1s;
+}
