@@ -39,6 +39,10 @@ body {
     align-items: center;
 }
 
+.box-titulo {
+    text-align: center;
+}
+
 .box-titulo h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -150,11 +154,68 @@ body {
     border: none;
     font-size: 1.5rem;
     font-weight: 500;
-    background-color: var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid var(--white-color);
     cursor: pointer;
 }
 
 .box-copiar button:hover {
-    background-color: var(--shadow-color);
+    background-color: var(--secondary-color);
     transition: 1s;
+}
+
+/* Responsivo */
+
+@media (max-width:600px) {
+
+    .container {
+        margin: 20px;
+    }
+
+    .box-gerador {
+        width: 370px;
+        padding: 20px;
+    }
+
+    .box-gerador input[type=text] {
+        font-size: 1rem;
+    }
+
+    .box-gerador textarea {
+        font-size: 1rem;
+    }
+
+    .box-titulo {
+        width: 100%;
+    }
+
+    .box-titulo h1 {
+        font-size:2rem;
+    }
+
+    .box-titulo span {
+        font-size: 1.2rem;
+    }
+
+    .box-resultado {
+        width: 370px
+    }
+
+    .box-resultado h3 {
+        font-size: 1.2rem;
+    }
+
+    .box-copiar {
+        flex-direction: column;
+    }
+
+    .box-copiar input {
+        width: 350px;
+        font-size: 1rem;
+    }
+
+    .box-copiar button {
+        width: 350px;
+        font-size: 1rem;
+    }
 }
