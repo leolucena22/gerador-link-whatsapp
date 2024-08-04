@@ -142,8 +142,8 @@ body {
     outline: none;
     border: none;
     font-size: 1rem;
-    background-color: var(--secondary-color);
-    color: var(--white-color);
+    background-color: var(--white-color);
+    color: var(--black-color);
 }
 
 .box-copiar button {
@@ -170,11 +170,11 @@ body {
 @media (max-width:600px) {
 
     .container {
-        margin: 20px;
+        margin: 10px;
     }
 
     .box-gerador {
-        width: 370px;
+        width: 100%;
         padding: 20px;
     }
 
@@ -191,7 +191,7 @@ body {
     }
 
     .box-titulo h1 {
-        font-size:2rem;
+        font-size: 2rem;
     }
 
     .box-titulo span {
@@ -199,7 +199,7 @@ body {
     }
 
     .box-resultado {
-        width: 370px
+        width: 100%;
     }
 
     .box-resultado h3 {
