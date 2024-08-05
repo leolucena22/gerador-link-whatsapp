@@ -91,6 +91,7 @@ body {
 
 ::placeholder {
     color: var(--gray-color);
+    font-weight: 400;
 }
 
 .box-gerador button {
@@ -184,7 +185,8 @@ body {
     background-color: var(--secondary-color);
     width: 100%;
     color: var(--white-color);
-    padding: 100px 0;
+    height: 100%;
+    padding: 60px 0;
 }
 
 .box-beneficio {
@@ -296,6 +298,24 @@ body {
 
     .box-copiar button {
         width: 100%;
+        font-size: 1rem;
+    }
+
+    .container-beneficio {
+        margin-top: 60px;
+    }
+
+    .box-beneficio {
+        margin: 20px 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .box-beneficio h2 {
+        font-size: 2rem;
+    }
+
+    .box-beneficio span {
         font-size: 1rem;
     }
 }
