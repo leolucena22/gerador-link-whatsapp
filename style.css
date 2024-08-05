@@ -48,13 +48,13 @@ body {
 }
 
 .box-titulo h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .box-titulo span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--primary-color);
     text-align: center;
@@ -178,6 +178,45 @@ body {
 .box-copiar button:hover {
     background-color: var(--secondary-color);
     transition: 1s;
+}
+
+.container-beneficio {
+    background-color: var(--secondary-color);
+    width: 100%;
+    color: var(--white-color);
+    padding: 100px 0;
+}
+
+.box-beneficio {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.box-beneficio h2 {
+    font-size: 3rem;
+}
+
+.box-beneficio span {
+    font-size: 1.5rem;
+}
+
+.box-beneficio a {
+    color: var(--white-color);
+    padding: 20px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.box-beneficio a:hover {
+    background-color: var(--white-color);
+    transition: 1s;
+    color: var(--secondary-color);
 }
 
 /* Animação */
