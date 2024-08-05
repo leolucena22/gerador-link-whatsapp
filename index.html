@@ -6,40 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Links WhatsApp</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="main">
-            <div class="box-titulo">
-                <h1>Gerador de Links</h1>
-                <span>Gere seu link personalizado para o WhatsApp gratuitamente.</span>
-
+          <div class="box-titulo">
+            <h1>Gerador de Links</h1>
+            <span>Gere seu link personalizado para o WhatsApp gratuitamente.</span>
+          </div>
+      
+          <div class="box-gerador">
+            <h3>Número do WhatsApp</h3>
+            <input type="text" name="numero" id="numero" placeholder="+55 (88) 98888-9999" maxlength="20">
+      
+            <h3>Mensagem inicial (Opcional)</h3>
+            <textarea name="Mensagem" id="mensagem" placeholder="Quero saber mais sobre ..."></textarea>
+      
+            <button type="button" class="botao-gerar">Gerar link</button>
+          </div>
+      
+          <div class="box-resultado hidden">
+            <h3>Aqui está seu link personalizado para compartilhar:</h3>
+            <div class="box-copiar">
+              <input id="link" type="text" value="" disabled>
+              <div class="box-botoes">
+                <button id="copiar-link" disabled>Copiar</button>
+                <button class="botao-gerar-novamente">Gerar novamente</button>
+              </div>
             </div>
-
-            <div class="box-gerador">
-                <h3>Número do WhatsApp</h3>
-                <input type="text" name="numero" id="numero" placeholder="(88) 98888-9999" maxlength="20"
-                    onkeyup="handlePhone(event)">
-
-                <h3>Mensagem inicial (Opcional)</h3>
-                <textarea name="Mensagem" id="mensagem" placeholder="Quero saber mais sobre ..."></textarea>
-
-                <button type="button" class="botao-gerar" onclick="gerarLink()">Gerar link</button>
-            </div>
-
-            <div class="box-resultado">
-                <h3>Aqui está seu link personalizado para compartilhar:</h3>
-                <div class="box-copiar">
-                    <input id="link" type="submit" value="" disabled="">
-                    <button onclick="copiarLink()">Copiar</button>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+      </div>
 </body>
 
 </html>

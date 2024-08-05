@@ -23,6 +23,10 @@ body {
     font-family: var(--font);
 }
 
+.hidden {
+    display: none!important;
+}
+
 .container {
     margin: 100px 120px;
     display: flex;
@@ -129,14 +133,16 @@ body {
 
 .box-copiar {
     display: flex;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    width: 90%;
 }
 
 .box-copiar input {
-    width: 400px;
+    width: 100%;
     padding: 10px 5px;
     border-radius: 5px;
     outline: none;
@@ -144,9 +150,18 @@ body {
     font-size: 1rem;
     background-color: var(--white-color);
     color: var(--black-color);
+    text-align: center;
 }
 
-.box-copiar button {
+.box-botoes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box-botoes button {
     padding: 10px 10px;
     color: var(--white-color);
     text-align: center;
@@ -163,6 +178,31 @@ body {
 .box-copiar button:hover {
     background-color: var(--secondary-color);
     transition: 1s;
+}
+
+/* Animação */
+/* Classe para animação de entrada */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Classe para animação de saída */
+.fade-out {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-out.hide {
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
 /* Responsivo */
@@ -211,12 +251,12 @@ body {
     }
 
     .box-copiar input {
-        width: 350px;
+        width: 100%;
         font-size: 1rem;
     }
 
     .box-copiar button {
-        width: 350px;
+        width: 100%;
         font-size: 1rem;
     }
 }
